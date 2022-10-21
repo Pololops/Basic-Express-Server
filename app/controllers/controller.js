@@ -1,7 +1,7 @@
-const datamapper = require('../models/datamapper');
-const ApiError = require('../errors/apiError.js');
+import datamapper from '../models/datamapper.js';
+import ApiError from '../errors/apiError.js';
 
-module.exports = {
+export default {
 	/**
 	 * Controller Method to get a record.
 	 * ExpressMiddleware signature

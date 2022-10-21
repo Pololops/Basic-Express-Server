@@ -3,7 +3,7 @@
  * @param {object} err Error class
  * @param {object} res Express response object
  */
-module.exports = (err, res) => {
+export default (err, res) => {
 	let { message } = err;
 	let statusCode = err.infos?.statusCode;
 

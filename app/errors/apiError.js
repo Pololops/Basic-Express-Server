@@ -4,11 +4,9 @@
  * @property {number} statusCode - HTTP Status code
  * @property {string} message - Error message
  */
-class ApiError extends Error {
+export default class ApiError extends Error {
 	constructor(message, infos) {
 		super(message);
 		this.infos = infos;
 	}
 }
-
-module.exports = ApiError;

@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
 
-const router = require('./routers');
+import router from './routers/index.js';
 
 const app = express();
 
@@ -15,4 +15,4 @@ app.use(cors(corsOptions));
 
 app.use(router);
 
-module.exports = app;
+export default app;

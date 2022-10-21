@@ -1,4 +1,4 @@
-const client = require('../config/database');
+import client from '../config/database.js';
 
 /**
  * @typedef {object} Data
@@ -15,7 +15,7 @@ const client = require('../config/database');
  * @property {string} column3 - The third column in db
  */
 
-module.exports = {
+export default {
 	/**
 	 * Find all records in database
 	 * @returns {Data[]} - All data in database

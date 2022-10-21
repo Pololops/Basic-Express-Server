@@ -1,10 +1,9 @@
-const { Router } = require('express');
+import { Router } from 'express';
+
+import controllerHandler from '../helpers/controllerHandler.js';
+import controller from '../controllers/controller.js';
+
 const router = Router();
-
-const controllerHandler = require('../helpers/controllerHandler');
-const controller = require('../controllers/controller');
-
-console.log('router');
 
 router
 	.route('')
@@ -74,4 +73,4 @@ router
 	 */
 	.delete(controllerHandler(controller.delete));
 
-module.exports = router;
+export default router;

@@ -1,10 +1,11 @@
-const { Router } = require('express');
+import { Router } from 'express';
+
+import errorHandler from '../helpers/errorHandler.js';
+import ApiError from '../errors/apiError.js';
+
+import dataRouter from './dataRouter.js';
+
 const router = Router();
-
-const errorHandler = require('../helpers/errorHandler');
-const ApiError = require('../errors/apiError');
-
-const dataRouter = require('./dataRouter');
 
 router.use('/', dataRouter)
 
@@ -16,4 +17,4 @@ router.use((err, _, response, next) => {
 	errorHandler(err, response, next);
 });
 
-module.exports = router;
+export default router;
