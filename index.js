@@ -1,7 +1,7 @@
-const http = require('http');
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
-const app = require('./app');
+import app from './app';
 
 const port = process.env.PORT ?? 3000;
 
