@@ -1,10 +1,11 @@
 const { Router } = require('express');
-const router = Router();
 
 const errorHandler = require('../helpers/errorHandler');
 const ApiError = require('../errors/apiError');
 
 const dataRouter = require('./dataRouter');
+
+const router = Router();
 
 router.use('/', dataRouter)
 

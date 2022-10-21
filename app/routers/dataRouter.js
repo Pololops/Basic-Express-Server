@@ -1,10 +1,9 @@
 const { Router } = require('express');
-const router = Router();
 
 const controllerHandler = require('../helpers/controllerHandler');
 const controller = require('../controllers/controller');
 
-console.log('router');
+const router = Router();
 
 router
 	.route('')
